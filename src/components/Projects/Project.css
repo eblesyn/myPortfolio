@@ -1,0 +1,98 @@
+
+@import "../../vars.css";
+
+.projectcontainer{
+    color: var(--color-text);
+    margin-top: 79px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.projecttitle {
+    color: var(--color-text);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  
+.projectcontent {
+  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+   max-width:345px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .Btndiv{
+    margin-top: 2%;
+    text-align: center;
+  }
+  .projectBtn {
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border-radius: 70px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cardtitle {
+    font-size: 18px;
+    margin: 10px 0;
+    color: var(--color-primary);
+  }
+  
+  .card p {
+    padding: 0 10px 10px;
+    font-size: 14px;
+    color: var(--color-text-secondary);
+  }
+  
+  @media screen and (max-width: 830px) {
+    .card {
+        display: grid;
+      grid-template-columns: repeat(1fr);
+        align-items: center;
+        text-align: center;
+        
+        
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+  }
