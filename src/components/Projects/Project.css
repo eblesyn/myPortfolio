@@ -30,14 +30,15 @@
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-   max-width:345px;
     display: flex;
+    flex-basis: 22%;
     flex-direction: column;
     align-items: center;
     text-align: center;
     transition: transform 0.3s ease;
     border: 1px solid #ddd;
     margin-bottom: 15px;
+
   }
   
   .card:hover {
@@ -74,6 +75,25 @@
     padding: 0 10px 10px;
     font-size: 14px;
     color: var(--color-text-secondary);
+    text-align: start;
+  }
+  .button{
+    margin-bottom: 3px;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    
+    
+  }
+  .Btn{
+    outline: none;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .button:hover{
+    color: black;
+    background-color: var(--color-primary);
   }
   
   @media screen and (max-width: 830px) {
@@ -90,6 +110,7 @@
   @media screen and (max-width: 500px) {
     .card {
         display: flex;
+        flex-basis: 100%;
         flex-direction: column;
         align-items: center;
         text-align: center;

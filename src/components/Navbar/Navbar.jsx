@@ -8,6 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className='navbar'>
+      
       <a href="#" className='title'>Portfolio</a>
       <div className='menu'>
         <img 
@@ -31,6 +32,8 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      
+      
     </nav>
   );
 };
